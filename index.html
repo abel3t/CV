@@ -49,7 +49,7 @@
                 Experience
               </li>
               <li onclick="location.href='#recent-works'" id='m-recent-works'>
-                <i class="fas fa-edit"></i><a href="#recent-works"></a>
+                <i class="fas fa-edit"></i>
                 Works
               </li>
               <li onclick="location.href='#contact-me'" id='m-contact-me'>
@@ -104,7 +104,9 @@
                 </li>
               </ul>
             </div>
-            <a class="button" href="#about-me">Hire Me</a>
+            <button class="btn" onclick="location.href='#about-me'">
+              About Me
+            </button>
           </div>
           <div id="scroll-down-btn">
           </div>
@@ -126,17 +128,22 @@
                 I’m Abel Tran, NodeJs Developer
               </p>
               <ul id="skills">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-                <li>REACTJS</li>
-                <li>REDUX</li>
-                <li>MONGODB</li>
-                <li>NODEJS</li>
-                <li>EXPRESSJS</li>
-                <li>GITHUB</li>
+                <li>NodeJs</li>
+                <li>Javascript</li>
+                <li>ExpressJs</li>
+                <li>HapiJs</li>
+                <li>Postgresql</li>
+                <li>REST API</li>
+                <li>MongoDB</li>
+                <li>ElasticSearch</li>
+                <li>Redis</li>
+                <li>Firebase</li>
+                <li>ReactJs</li>
+                <li>Git</li>
               </ul>
-              <a href="" style="width:110px" class="button">Download CV</a>
+              <button class="btn">
+                Download CV
+              </button>
             </div>
           </div>
         </div>
@@ -161,7 +168,7 @@
                   <div class="image-container">
                     <img src="./public/img/service-2.svg">
                   </div>
-                  <p class="section-title" style="color:white">ReactJs</p>
+                  <p class="section-title" style="color:white">ExpressJs</p>
                   <p class="text" style="text-align: center; color:white">Text</p>
                 </div>
               </li>
@@ -191,7 +198,7 @@
                 <div class="text">
                   <span id="time">8/2018</span>
                   <p id="event">Start learning at ITC</p>
-                  <p id="addtional information">Learn about HTML, CSS, Javascript</p>
+                  <p id="addtional">Learn about HTML, CSS, Javascript</p>
                 </div>
               </div>
             </div>
@@ -202,8 +209,8 @@
                 <div class="text">
                   <span id="time">10/2019 - 9/2020</span>
                   <p id="event">Working at ampUp Vietnam</p>
-                  <p id="addtional information">Position: Back-end NodeJs Developer</p>
-                  <span>Description: Coding new Feature, Maintance APIs</span>
+                  <p id="addtional">Position: Back-end NodeJs Developer</p>
+                  <span id="description">Description: Coding new Feature, Maintance APIs</span>
                 </div>
               </div>
             </div>
@@ -279,11 +286,11 @@
                 <div class="contact-part-icon">
                   <i class="fas fa-location-arrow"></i>
                 </div>
-                <p class="contact-part-title">
+                <p class="contact-part-title" onclick="location.href='#address'">
                   Address
                 </p>
                 <p class="contact-part-info">
-                  Do Ngoc Thanh Street, Ward 14, District 5, Saigon
+                  15 Do Ngoc Thanh Street, Ward 14, District 5, Saigon
                 </p>
               </div>
             </li>
@@ -292,12 +299,12 @@
                 <div class="contact-part-icon">
                   <i class="fas fa-envelope"></i>
                 </div>
-                <p class="contact-part-title">
+                <p class="contact-part-title" onclick="location.href='mailto:abeltran.develop@gmail.com'">
                   Email
                 </p>
-                <a style="    color: #5e5c7f;;text-decoration: none" class="contact-part-info" href="mailto:abeltran.develop@gmail.com">
-                abeltran.develop@gmail.com
-                </a>
+                <p class="contact-part-info">
+                  abeltran.develop@gmail.com
+                </p>
               </div>
             </li>
             <li>
@@ -305,16 +312,17 @@
                 <div class="contact-part-icon">
                   <i class="fas fa-phone"></i>
                 </div>
-                <p class="contact-part-title">
+                <p class="contact-part-title" onclick="location.href='tel:0355933881'">
                   Phone
                 </p>
-                <a style="    color: #5e5c7f;;text-decoration: none" class="contact-part-info" href="tel:0355933881">
-                +84 355 933 881
-                </a>
+                <p class="contact-part-info">
+                  +84 355 933 881
+                </p>
               </div>
             </li>
           </ul>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.77647040846!2d106.65367241480055!3d10.7517032923383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ef4591fa57b%3A0xb7d3ade595432d24!2zMTUgxJDhu5cgTmfhu41jIFRo4bqhbmgsIFBoxrDhu51uZyAxNCwgUXXhuq1uIDUsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaA!5e0!3m2!1sen!2s!4v1599400140806!5m2!1sen!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        </div>
+          <iframe id='address' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.77647040846!2d106.65367241480055!3d10.7517032923383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ef4591fa57b%3A0xb7d3ade595432d24!2zMTUgxJDhu5cgTmfhu41jIFRo4bqhbmgsIFBoxrDhu51uZyAxNCwgUXXhuq1uIDUsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaA!5e0!3m2!1sen!2s!4v1599400140806!5m2!1sen!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
       </div>
     </div>
   </body>
