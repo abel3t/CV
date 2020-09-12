@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Abel Tran CV </title>
+    <title>Abel Tran CV</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,44 +16,52 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.2/gsap.min.js"></script>
     <!-- GSAP -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
-  </head>
+  
+    </head>
   <body>
     <div class="empty">
     </div>
     <div class="container">
-      <section class="nav-bar" id="nav-bar">
+      <div class="nav-bar" id="nav-bar">
         <div class="nav-bar-container">
           <i class="fas fa-window-close" id="nav-mobile-btn-close" style="position: absolute; right: 10px; top: 30px; font-size: 40px; color: white; opacity: 0;"></i>
           <div class="image-container">
             <h2 style="color: white;
               font-size: 40px;
-              font-family: sans-serif;; ">Abel Tran</span></h2>
+              font-family: sans-serif; text-align: center; ">Abel Tran</span></h2>
           </div>
           <div class="nav-bar-links">
             <ul>
-              <li>
-                <i class="fas fa-home"></i><a href="#introduction">Home</a>
+              <li class="active" onclick="location.href='#introduction'" id='m-introduction'>
+                <i class="fas fa-home"></i>
+                Home
               </li>
-              <li>
-                <i class="fas fa-user"></i><a href="#about-me"> About</a>
+              <li onclick="location.href='#about-me'" id='m-about-me'>
+                <i class="fas fa-user"></i>
+                About
               </li>
-              <li>
-                <i class="fas fa-briefcase" style="margin-right: 18px;"></i><a href="#service"> Service</a>
+              <li onclick="location.href='#service'" id='m-service'>
+                <i class="fas fa-briefcase" style="margin-right: 18px;"></i>
+                Service
               </li>
-              <li>
-                <i class="fas fa-graduation-cap" style="margin-right: 18px;"></i><a href="#exp">Experience</a>
+              <li onclick="location.href='#exp'" id='m-exp'>
+                <i class="fas fa-graduation-cap" style="margin-right: 18px;"></i>
+                Experience
               </li>
-              <li>
-                <i class="fas fa-edit"></i><a href="#recent-works">Works</a>
+              <li onclick="location.href='#recent-works'" id='m-recent-works'>
+                <i class="fas fa-edit"></i><a href="#recent-works"></a>
+                Works
               </li>
-              <li>
-                <i class="far fa-comments"></i><a href="#contact-me">Contact</a>
+              <li onclick="location.href='#contact-me'" id='m-contact-me'>
+                <i class="far fa-comments"></i>
+                Contact
               </li>
             </ul>
           </div>
         </div>
-      </section>
-      <section class="introduction" id="introduction">
+      </div>
+
+      <div class="section" id="introduction">
         <div class="introduction-container">
           <div class="nav-bar-mobile">
             <button id="nav-bar-btn" style="font-size: 30px;
@@ -62,7 +70,7 @@
             </button>
             <h2 style="color: white;
               font-size: 40px;
-              font-family: sans-serif;margin-bottom: 53px; ">Abel Tran</span></h2>
+              font-family: sans-serif;margin-bottom: 53px;">Abel Tran</span></h2>
           </div>
           <div class="home-info">
             <div class="image-container">
@@ -75,7 +83,7 @@
               I'm a
               <span>
               <span class="typewrite text-danger" data-period="2000"
-                data-type='[ "Backend Developer" ]'>
+                data-type='[ "NodeJs Developer" ]'>
               <span class="wrap"></span>
               </span>
               </span>
@@ -101,8 +109,9 @@
           <div id="scroll-down-btn">
           </div>
         </div>
-      </section>
-      <section class="about-me" id="about-me">
+      </div>
+
+      <div class="section about-me" id="about-me">
         <div class="about-me-container">
           <h2 class="section-title">About Me</h2>
           <div class="about-me-content">
@@ -114,7 +123,7 @@
             <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="right-content">
               <p id="hello">hello!</p>
               <p id="introduce">
-                I’m Abel Tran, Backend Developer
+                I’m Abel Tran, NodeJs Developer
               </p>
               <ul id="skills">
                 <li>HTML</li>
@@ -131,8 +140,9 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="service" id="service">
+      </div>
+
+      <div class="section" id="service">
         <div class="service-container">
           <h2 class="section-title" style="margin-bottom:50px">Service</h2>
           <div class="service-content">
@@ -168,8 +178,9 @@
           </div>
           <p></p>
         </div>
-      </section>
-      <section class="exp" id="exp">
+      </div>
+
+      <div class="section" id="exp">
         <div class="exp-container">
           <h2 class="section-title">Experience</h2>
           <div class="exp-content">
@@ -198,8 +209,9 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="recent-works" id="recent-works">
+      </div>
+
+      <div class="section" id="recent-works">
         <div class="recent-works-container">
           <h2 class="section-title">Recent works</h2>
           <div class="recent-works-content">
@@ -256,8 +268,9 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="contact-me" id="contact-me">
+      </div>
+      
+      <div class="section" id="contact-me">
         <div class="contact-me-container">
           <h3 class="section-title">Contact Me</h3>
           <ul data-aos="zoom-in" class="contact-list">
@@ -302,8 +315,7 @@
             </li>
           </ul>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.77647040846!2d106.65367241480055!3d10.7517032923383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ef4591fa57b%3A0xb7d3ade595432d24!2zMTUgxJDhu5cgTmfhu41jIFRo4bqhbmgsIFBoxrDhu51uZyAxNCwgUXXhuq1uIDUsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaA!5e0!3m2!1sen!2s!4v1599400140806!5m2!1sen!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>        </div>
-      </section>
-      </section>
+      </div>
     </div>
   </body>
 </html>

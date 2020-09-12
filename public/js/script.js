@@ -71,8 +71,6 @@ document.addEventListener(
     const reactjsList = document.querySelectorAll('.reactjs');
     const fullstackList = document.querySelectorAll('.fullstack');
 
-    console.log(allTabContent);
-
     for (let i = 0; i < tabChanger.length; i++) {
       tabChanger[i].onclick = function () {
         if (this.classList.value === 'tab active') {} else {
@@ -81,7 +79,7 @@ document.addEventListener(
           }
           this.classList.add('active');
           var contentName = this.getAttribute('data-appear');
-          console.log(contentName);
+
           if (contentName === '.html') {
             for (let i = 0; i < htmlList.length; i++) {
               htmlList[i].classList.remove('disappear');
@@ -139,6 +137,29 @@ document.addEventListener(
 
     navCloseBtn.onclick = () => {
       navbar.classList.remove('nav-bar-mobile-open');
+    };
+
+    var section = document.querySelectorAll(".section");
+    var sections = {};
+    var i = 0;
+
+    Array.prototype.forEach.call(section, function (e) {
+      sections[e.id] = e.offsetTop;
+    });
+
+    window.onscroll = function () {
+      var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+      console.log(i, i in sections)
+      for (i in sections) {
+        if (sections[i] <= scrollPosition) {
+          activeClassName = document.querySelector('.active');
+          if (activeClassName) {
+            activeClassName.setAttribute('class', ' ');
+            document.getElementById(`m-${i}`).setAttribute('class', 'active');
+          }
+        }
+      }
     };
   },
   false
