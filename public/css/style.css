@@ -77,7 +77,7 @@ section {
   user-select: none;
 }
 
-.button:hover {
+.btn:hover {
   transform: scale(1.1);
   transition: 0.4s;
 }
@@ -86,7 +86,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 6fr;
   grid-template-rows: 100vh auto auto auto auto;
-  grid-template-areas: "empty introduction""empty about""empty service""empty exp""empty recent-works""empty contact";
+  grid-template-areas: "empty introduction""empty about""empty master""empty exp""empty recent-works""empty contact";
 }
 
 .empty {
@@ -292,17 +292,17 @@ section {
   font-weight: 800;
 }
 
-#service {
-  grid-area: service;
+#master {
+  grid-area: master;
 }
 
-#service .service-container {
+#master .master-container {
   width: 70%;
   margin: 0 auto;
   margin-top: 75px;
 }
 
-#service .service-container .service-content ul {
+#master .master-container .master-content ul {
   padding: 0;
   list-style: none;
   display: flex;
@@ -310,7 +310,7 @@ section {
   flex-wrap: wrap;
 }
 
-#service .service-container .service-content ul li {
+#master .master-container .master-content ul li {
   transition: 0.4s;
   border-radius: 20px;
   height: 270px;
@@ -319,7 +319,7 @@ section {
   box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
-#service .service-container .service-content ul li .content {
+#master .master-container .master-content ul li .content {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -329,7 +329,7 @@ section {
   text-align: center;
 }
 
-#service .service-container .service-content ul li .content .image-container {
+#master .master-container .master-content ul li .content .image-container {
   width: 120px;
   height: 120px;
   display: flex;
@@ -337,11 +337,11 @@ section {
   align-items: center;
 }
 
-#service .service-container .service-content ul li .content .title .text {
+#master .master-container .master-content ul li .content .title .text {
   color: #000;
 }
 
-#service .service-container .service-content ul li:hover {
+#master .master-container .master-content ul li:hover {
   transition: 0.4s;
   transform: translateY(-20px);
   cursor: pointer;
@@ -609,6 +609,10 @@ section {
   cursor: pointer;
 }
 
+#contact-me .contact-me-container ul li .contact-part .contact-part-title:hover {
+  transform: scale(1.1);
+}
+
 #contact-me .contact-me-container ul li .contact-part .contact-part-info {
   margin-top: 50px;
   color: #363636;
@@ -622,7 +626,7 @@ section {
 }
 
 @media (max-width: 1778px) {
-  #service .service-container .service-content ul li .content .image-container {
+  #master .master-container .master-content ul li .content .image-container {
     width: 90px;
     height: 90px;
   }
@@ -645,7 +649,7 @@ section {
     width: 90% !important;
   }
 
-  .service-container {
+  .master-container {
     width: 90% !important;
   }
 
@@ -742,7 +746,7 @@ section {
     margin-top: 230px;
   }
 
-  #service .service-container .service-content ul li {
+  #master .master-container .master-content ul li {
     width: 100%;
     margin-bottom: 30px;
   }
