@@ -189,6 +189,10 @@ section {
   margin-top: 10px;
 }
 
+#introduction .introduction-container .home-info .button {
+  margin: 0;
+}
+
 #introduction .introduction-container .home-info #job {
   color: white;
   font-size: 24px;
@@ -198,14 +202,13 @@ section {
   padding: 0;
   color: white;
   font-size: 20px;
-  display: flex;
-  justify-content: center;
-  list-style: none;
+  text-align: center;
 }
 
 #introduction .introduction-container .home-info #link ul li {
-  margin-right: 20px;
+  margin: 0 10px;
   font-size: 24px;
+  display: inline;
 }
 
 #introduction .introduction-container .home-info #link ul li:hover {
@@ -479,8 +482,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  height: 90%;
+  padding: 12%;
 }
 
 #recent-works .recent-works-container .recent-works-content .works-container ul li #category-title {
